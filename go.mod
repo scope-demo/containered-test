@@ -15,7 +15,8 @@ require (
 	github.com/prometheus/client_model v0.2.0 // indirect
 	github.com/rogpeppe/go-internal v1.5.2 // indirect
 	github.com/stretchr/objx v0.2.0 // indirect
-	go.undefinedlabs.com/scopeagent v0.1.13-0.20200317112817-c40f1338f847 // indirect
+	github.com/stretchr/testify v1.5.1 // indirect
+	go.undefinedlabs.com/scopeagent v0.1.12 // indirect
 	golang.org/x/crypto v0.0.0-20200311171314-f7b00557c8c4 // indirect
 	golang.org/x/exp v0.0.0-20200228211341-fcea875c7e85 // indirect
 	golang.org/x/image v0.0.0-20200119044424-58c23975cae1 // indirect
@@ -23,7 +24,7 @@ require (
 	golang.org/x/sync v0.0.0-20200317015054-43a5402ce75a // indirect
 	golang.org/x/sys v0.0.0-20200317113312-5766fd39f98d // indirect
 	golang.org/x/tools v0.0.0-20200317043434-63da46f3035e // indirect
-	google.golang.org/genproto v0.0.0-20200316142031-303a05041dad // indirect
+	google.golang.org/genproto v0.0.0-20200317114155-1f3552e48f24 // indirect
 	gopkg.in/check.v1 v1.0.0-20200227125254-8fa46927fb4f // indirect
 	gopkg.in/yaml.v2 v2.2.8 // indirect
 	gotest.tools v2.2.0+incompatible
