@@ -14,6 +14,11 @@ jobs:
       uses: actions/checkout@v2
 
     - name: Run test
-      run: docker run -e SCOPE_DSN --rm $(docker build -q .)
+      run: docker run -v /home/runner/work/containered-test/containered-test/logs:/var/log/scope -e SCOPE_DSN --rm $(docker build -q .)
       env:
-        SCOPE_DSN: ${{secrets.SCOPE_DSN}} 
+        SCOPE_DSN: ${{secrets.SCOPE_DSN}}
+
+    - uses: actions/upload-artifact@v1
+      with:
+        name: logs
+        path: /home/runner/work/containered-test/containered-test/logs
