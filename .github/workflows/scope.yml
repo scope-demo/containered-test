@@ -12,7 +12,8 @@ jobs:
 
     - name: Check out code into the Go module directory
       uses: actions/checkout@v2
-
+    - run: go get -u go.undefinedlabs.com/scopeagent@forbid-empty-sourceroot
+      
     - name: Run test
       run: docker run -v /home/runner/work/containered-test/containered-test/logs:/var/log/scope -e SCOPE_DSN --rm $(docker build -q .)
       env:
